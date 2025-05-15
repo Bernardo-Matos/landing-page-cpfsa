@@ -93,19 +93,19 @@ export default function Home() {
     
     {/* Texto à esquerda */}
     <div className="w-full md:w-7/12">
-      <h1 className="text-4xl md:text-5xl font-bold text-white mb-6 leading-tight">
+      <h1 className="text-4xl md:text-5xl font-bold text-white mb-12 leading-tight">
         Sofreu um acidente <br />em uma corrida de <br />aplicativo?
         Você <br />pode ter direito a <br />uma indenização!
       </h1>
 
       <p className="text-3xl md:text-3xl font-semibold text-white mb-6 leading-snug">
         Plataformas como <span style={{ color: '#c99800' }}><strong>Uber e 99</strong></span><br />
-        possuem seguros obrigatórios.<br />
-        Saiba como receber <br />o que é seu por direito.
+        possuem seguros obrigatórios de até <br /><span style={{ color: '#2ecc71' }}><strong>R$ 100 mil reais.</strong></span><br />
+        Saiba como receber o que é seu  <br />por direito.
       </p>
 
       <div className="mt-10">
-        <h3 className="text-2xl md:text-2xl font-bold text-white">Poucas pessoas conhecem <br />esse direito.</h3> {/* Mudar tamanho do texto por aqui */}
+        <h3 className="text-2xl md:text-2xl font-bold text-white">Poucas pessoas <br />sabem disso.</h3> {/* Mudar tamanho do texto por aqui */}
         <p className="text-lg font-bold text-white">
           Meu nome é Claudio. <br /> Sou advogado e te explico tudo. <br />
         </p>
@@ -364,67 +364,39 @@ export default function Home() {
       </section>
 
 {/* Rodapé */}
-      <footer style={{ backgroundColor: '#062d49' }} className="text-white py-6">
-  <div className="container mx-auto px-4">
-    <div className="flex flex-col md:flex-row justify-between gap-8">
-      
-      {/* Coluna: Logo + Redes sociais */}
-      <div className="flex flex-col items-center md:items-start">
-        <Image
-          src="/logo-cpfsa.png"
-          alt="CPFSA"
-          width={120}
-          height={120}
-          className="rounded-full mx-auto mb-2 object-cover"
-          priority
-        />
-        <div className="flex space-x-2 mt-1">
-          {[
-            { href: "https://www.instagram.com/cpf_sa/", alt: "Instagram", src: "/instagram.png" },
-            { href: "https://www.facebook.com/cpfsa.adv/", alt: "Facebook", src: "/facebook.png" },
-            { href: "https://www.linkedin.com/company/cpfsa-claudio-panhotta-freire-sociedade-de-advogados/?trk=companies_directory", alt: "LinkedIn", src: "/linkedin.png" },
-            { href: "https://www.youtube.com/@CPFSASociedadedeAdvogados", alt: "YouTube", src: "/youtube.png" },
-          ].map(({ href, alt, src }) => (
-            <a key={alt} href={href} target="_blank" rel="noopener noreferrer"
-              className="w-9 h-9 bg-[#062D49] rounded-full flex items-center justify-center hover:scale-105 transition-transform duration-300">
-              <img src={src} alt={alt} className="w-full h-full object-contain" />
-            </a>
-          ))}
-        </div>
-      </div>
+<footer style={{ backgroundColor: '#062d49' }} className="text-white py-2">
+  <div className="container mx-auto px-4 flex flex-col items-center space-y-1
+">
+    
+    {/* Logo */}
+    <Image
+      src="/logo-cpfsa.png"
+      alt="CPFSA"
+      width={180}
+      height={180}
+      className="rounded-full object-cover"
+      priority
+    />
 
-      {/* Coluna: Menu */}
-      <div>
-        <h4 className="text-base font-semibold mb-1 border-b border-yellow-400 w-fit pb-1">Menu</h4>
-        <ul className="space-y-1 text-sm leading-snug text-white">
-          <li><a href="https://cpfsa.com.br/" target="_blank" rel="noopener noreferrer" className="hover:underline">› Home</a></li>
-          <li><a href="https://cpfsa.com.br/quem-somos/" target="_blank" rel="noopener noreferrer" className="hover:underline">› Quem Somos</a></li>
-          <li><a href="https://cpfsa.com.br/blog/" target="_blank" rel="noopener noreferrer" className="hover:underline">› Blog</a></li>
-          <li><a href="https://cpfsa.com.br/contato/" target="_blank" rel="noopener noreferrer" className="hover:underline">› Contato</a></li>
-        </ul>
-      </div>
+    {/* Instagram */}
+    <a
+      href="https://www.instagram.com/artigo186/"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="hover:scale-105 transition-transform duration-200"
+    >
+      <Image
+        src="/instagram.png"
+        alt="Instagram"
+        width={80}
+        height={80}
+        className="object-contain"
+      />
+    </a>
 
-      {/* Coluna: Serviços */}
-      <div>
-        <h4 className="text-base font-semibold mb-1 border-b border-yellow-400 w-fit pb-1">Serviços</h4>
-        <ul className="space-y-1 text-sm leading-snug text-white">
-          <li><a href="https://cpfsa.com.br/areas-de-atuacao/acidente-de-trabalho-ou-doenca-ocupacional/" target="_blank" rel="noopener noreferrer" className="hover:underline">› Áreas de Atuação</a></li>
-        </ul>
-      </div>
-
-      {/* Coluna: Contatos */}
-      <div>
-        <h4 className="text-base font-semibold mb-1 border-b border-yellow-400 w-fit pb-1">Contatos</h4>
-        <ul className="space-y-2 text-sm leading-snug text-white">
-          <li>📞 <a href="https://api.whatsapp.com/send/?phone=5531995555688" target="_blank" rel="noopener noreferrer" className="hover:underline">(31) 9555-5688</a></li>
-          <li>✉️ <a href="mailto:cpfsa.comercial@gmail.com" className="hover:underline">cpfsa.comercial@gmail.com</a></li>
-          <li>📍 <a href="https://goo.gl/maps/G2M7V4ytoKKoXo517" target="_blank" rel="noopener noreferrer" className="hover:underline">R. Araguari, 358 - Sala 801 - Barro Preto<br />Belo Horizonte - MG, 30190-110</a></li>
-        </ul>
-      </div>
-    </div>
-
-    <div className="mt-4 text-center text-gray-400 text-xs">
-      © {new Date().getFullYear()} CPFSA - Todos os direitos reservados.
+    {/* Direitos autorais */}
+    <div className="text-xs text-gray-400 text-center">
+      © 2025 CPFSA - Todos os direitos reservados.
     </div>
   </div>
 </footer>
