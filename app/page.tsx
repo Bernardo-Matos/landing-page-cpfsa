@@ -6,44 +6,22 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-white">
 
-      {/* Topo azul com contato e redes sociais */}
-      <div className="bg-[#062d49] text-white text-sm py-2 px-4 flex justify-between items-center">
-        <div className="flex items-center gap-4">
-          <span>✉</span> 
-          <a
-        href="mailto:cpfsa.comercial@gmail.com"
-        className="hover:text-[#c99800] hover:underline"
-      >
-        cpfsa.comercial@gmail.com
-      </a>
-          <span>📞</span>
-          <a
-        href="https://api.whatsapp.com/send/?phone=5531995555688"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="hover:text-[#c99800] hover:underline"
-      >
-        (31) 9555-5688
-      </a>
-        </div>
-        <div className="flex space-x-2 mt-1">
-  {[
-    { href: "https://www.instagram.com/cpf_sa/", alt: "Instagram", src: "/instagram.png" },
-    { href: "https://www.facebook.com/cpfsa.adv/", alt: "Facebook", src: "/facebook.png" },
-    { href: "https://www.linkedin.com/company/cpfsa-claudio-panhotta-freire-sociedade-de-advogados/?trk=companies_directory", alt: "LinkedIn", src: "/linkedin.png" },
-    { href: "https://www.youtube.com/@CPFSASociedadedeAdvogados", alt: "YouTube", src: "/youtube.png" },
-  ].map(({ href, alt, src }) => (
-    <a
-      key={alt}
-      href={href}
+      {/* Topo azul com apenas o Instagram centralizado */}
+      <div className="bg-[#062d49] text-white text-sm py-1 px-4 flex justify-center items-center h-[50px]">
+        <a
+      href="https://www.instagram.com/artigo186/"
       target="_blank"
       rel="noopener noreferrer"
-      className="w-9 h-9 bg-[#062D49] rounded-full flex items-center justify-center hover:scale-105 transition-transform duration-300"
+      className="hover:scale-105 transition-transform duration-200"
     >
-      <img src={src} alt={alt} className="w-full h-full object-contain" />
+      <Image
+        src="/instagram.png"
+        alt="Instagram"
+        width={80}
+        height={80}
+        className="object-contain"
+      />
     </a>
-  ))}
-</div>
       </div>
 
       {/* Header branco com logo e menu */}
