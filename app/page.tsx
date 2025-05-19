@@ -23,7 +23,6 @@ export default function Home() {
       />
     </a>
       </div>
-
       {/* Header branco com logo e menu */}
 <header className="bg-white shadow-sm relative top-0 z-10">
   <div className="container mx-auto px-4 py-4 flex justify-between items-center">
@@ -54,7 +53,7 @@ export default function Home() {
       </header>
 
       {/* Primeira Dobra - Impacto Imediato */}
-      <section id="hero" className="relative overflow-hidden py-16 bg-gray-100 h-screen">
+      <section id="hero" className="relative overflow-hidden py-12 sm:py-16 bg-gray-100 min-h-screen">
         
   {/* Fundo escuro e desfocado */}
   <div className="absolute inset-0 z-0">
@@ -71,7 +70,7 @@ export default function Home() {
     
     {/* Texto à esquerda */}
     <div className="w-full md:w-7/12">
-      <h1 className="text-4xl md:text-5xl font-bold text-white mb-12 leading-tight">
+      <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-12 leading-tight">
         Sofreu um acidente <br />em uma corrida de <br />aplicativo?
         Você <br />pode ter direito a <br />uma indenização!
       </h1>
@@ -79,11 +78,11 @@ export default function Home() {
       <p className="text-3xl md:text-3xl font-semibold text-white mb-6 leading-snug">
         Plataformas como <span style={{ color: '#c99800' }}><strong>Uber e 99</strong></span><br />
         possuem seguros obrigatórios de até <br /><span style={{ color: '#2ecc71' }}><strong>R$ 100 mil reais.</strong></span><br />
-        Saiba como receber o que é seu  <br />por direito.
+        Saiba como receber o que é <br />seu por direito.
       </p>
 
       <div className="mt-10">
-        <h3 className="text-2xl md:text-2xl font-bold text-white">Poucas pessoas <br />sabem disso.</h3> {/* Mudar tamanho do texto por aqui */}
+        <h3 className="text-2xl md:text-2xl font-bold text-white">Poucas pessoas sabem disso.</h3> {/* Mudar tamanho do texto por aqui */}
         <p className="text-lg font-bold text-white">
           Meu nome é Claudio. <br /> Sou advogado e te explico tudo. <br />
         </p>
@@ -123,7 +122,7 @@ export default function Home() {
               A Justiça reconhece que empresas como a <strong>Uber e 99</strong> <br />são responsáveis por acidentes durante as viagens. <br />Você pode processar a empresa diretamente, <br />sem precisar acionar o motorista.
             </p>
           </div>
-          <div className="grid md:grid-cols-2 gap-12 mb-16">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-12 mb-16">
             <div className="p-8 rounded-1g shadow-sm"
             style={{ backgroundColor: '#fff8e7' }}>
               <h3 className="text-3xl font-semibold text-gray-800 mb-4">Quem pode ser indenizado?</h3>
@@ -275,7 +274,7 @@ export default function Home() {
       </section>
       
       {/* Terceira Dobra - Reforço Final */}
-      <section id="calcular" style={{ backgroundColor: '#111827' }} className="py-16 md:py-24 text-white">
+      <section id="calcular" style={{ backgroundColor: '#111827' }} className="py-12 sm:py-16 md:py-24 text-white">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-bold mb-8">Se você sofreu um acidente em uma corrida da Uber ou 99, podemos ajudar.</h2>
