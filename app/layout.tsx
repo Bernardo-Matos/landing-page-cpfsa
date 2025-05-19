@@ -19,7 +19,9 @@ export default function RootLayout({
   return (
     <html lang="pt-BR">
       <body className={inter.className}>
-        {children}
+        <div className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
+    {children}
+  </div>
 
         {/* Ícone flutuante no canto inferior direito */}
         <a
