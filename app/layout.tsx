@@ -19,9 +19,7 @@ export default function RootLayout({
   return (
     <html lang="pt-BR">
       <body className={inter.className}>
-        <div className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
-    {children}
-  </div>
+        {children}
 
         {/* Ícone flutuante no canto inferior direito */}
         <a
@@ -31,7 +29,7 @@ export default function RootLayout({
           className="fixed bottom-6 right-6 z-50"
         >
           <img
-            src="/whatsapp-icon.png" 
+            src="/whatsapp-icon.png"
             alt="Fale conosco no WhatsApp"
             className="w-14 h-14 drop-shadow-lg hover:scale-110 transition-transform"
           />
