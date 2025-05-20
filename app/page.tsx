@@ -48,7 +48,7 @@ export default function Home() {
 
           {/* Botão */}
           <Button asChild className="bg-[#002F4B] hover:bg-[#c99800]">
-            <a href="#calcular">Quero saber mais!</a>
+            <a href="#rodapé">Quero saber mais!</a>
           </Button>
         </div>
       </header>
@@ -344,7 +344,7 @@ export default function Home() {
       </section>
 
 {/* Rodapé */}
-<footer style={{ backgroundColor: '#062d49' }} className="text-white py-2">
+<footer id= "rodapé" style={{ backgroundColor: '#062d49' }} className="text-white py-2">
   <div className="container mx-auto px-4 flex flex-col items-center space-y-1
 ">
     
