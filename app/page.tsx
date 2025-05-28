@@ -47,7 +47,7 @@ export default function Home() {
           </nav>
 
           {/* Botão */}
-          <Button asChild className="bg-[#002F4B] hover:bg-[#c99800]">
+          <Button asChild className="bg-green-600 hover:bg-green-700">
             <a href="#rodapé">Quero saber mais!</a>
           </Button>
         </div>
@@ -94,8 +94,7 @@ export default function Home() {
     <div className="mt-6">
       <a
         href="https://wa.me/553191461571?text=Olá!%20Vi%20o%20anúncio%20no%20site%20e%20preciso%20de%20um%20especialista%20que%20me%20ajude%20num%20acidente%20que%20tive"
-        style={{ backgroundColor: '#d48f24' }}
-        className="inline-block text-white text-lg font-semibold px-6 py-4 rounded-lg shadow transition"
+        className="inline-flex items-center bg-green-600 hover:bg-green-700 text-white text-lg font-semibold px-8 py-4 rounded-full transition"
       >
         Fale com minha equipe agora
       </a>
@@ -247,17 +246,17 @@ export default function Home() {
         </div>
               <div className="bg-[#f5e8d8] border border-gray-200 rounded-xl p-6 text-center shadow-sm hover:shadow-md transition">
           <div className="w-16 h-16 bg-[#f5e8d8] rounded-full flex items-center justify-center mx-auto mb-4">
-            <span className="text-yellow-500 text-2xl">🧑‍⚖️</span>
+            <span className="text-yellow-500 text-2xl">💰</span>
           </div>
-          <h4 className="font-semibold text-[#333333] mb-1">Atendimento Humano</h4>
-          <p className="text-sm font-bold text-[#333333]">Nada de robôs, você fala com quem resolve</p>
+          <h4 className="font-semibold text-[#333333] mb-1">Reembolso de Despesas</h4>
+          <p className="text-sm font-bold text-[#333333]">Gastos com remédios, transporte e fisioterapia podem ser reembolsados, se comprovados</p>
         </div>
               <div className="bg-[#f5e8d8] border border-gray-200 rounded-xl p-6 text-center shadow-sm hover:shadow-md transition">
           <div className="w-16 h-16 bg-[#f5e8d8] rounded-full flex items-center justify-center mx-auto mb-4">
-            <span className="text-green-600 text-2xl">⚡</span>
+            <span className="text-green-600 text-2xl">📝</span>
           </div>
-          <h4 className="font-semibold text-[#333333] mb-1">Consulta Rápida e sem Burocracia</h4>
-          <p className="text-sm font-bold text-[#333333]">Entenda seus direitos em minutos</p>
+          <h4 className="font-semibold text-[#333333] mb-1">Indenização por Perda de Renda</h4>
+          <p className="text-sm font-bold text-[#333333]">Se ficou sem trabalhar, é possível pedir indenização pelos dias parados</p>
         </div>
             </div>
           </div>
@@ -295,7 +294,7 @@ export default function Home() {
                   <span className="font-bold text-[#111827] text-xl">2</span>
                 </div>
                 <h3 className="font-semibold text-[#ffffff] text-xl mb-2">Entenda seus direitos</h3>
-                <p className="text-[#d1d5db]">Nossa equipe jurídica especializada te orienta sobre os seguros disponíveis e os valores que você pode ter direito a receber.</p>
+                <p className="text-[#d1d5db]">Nossa equipe jurídica especializada te orienta sobre os seguros disponíveis e os valores que você tem direito a receber.</p>
               </div>
               <div className="bg-[#1f2937] p-6 rounded-lg backdrop-blur-sm">
                 <div className="w-12 h-12 bg-[#c99800] rounded-full flex items-center justify-center mx-auto mb-4">
@@ -311,7 +310,7 @@ export default function Home() {
               <p className="text-gray-800 mb-8">
               <span>👇</span> <strong>Clique abaixo e fale com nossa equipe jurídica.</strong>
               </p>
-            <Button asChild className="bg-[#002F4B] hover:bg-[#c99800] text-white px-6 py-4 text-lg font-semibold rounded-md">
+            <Button asChild className="bg-green-600 hover:bg-green-700 text-white px-6 py-4 text-lg font-semibold rounded-md">
             <a href="https://wa.me/553191461571?text=Olá!%20Vi%20o%20anúncio%20no%20site%20e%20preciso%20de%20um%20especialista%20que%20me%20ajude%20num%20acidente%20que%20tive"
             >Fale com nossa equipe AGORA</a>
           </Button>
