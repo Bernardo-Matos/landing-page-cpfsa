@@ -73,7 +73,7 @@ export default function Home() {
   <div className="w-full md:w-7/12">
     <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-8 leading-tight">
       Sofreu um acidente <br />em uma corrida de <br />aplicativo?
-      Você <br />pode ter direito a <br />uma indenização!
+      Você <br />tem direito a <br />uma indenização!
     </h1>
 
     <p className="text-xl sm:text-2xl font-semibold text-white mb-6 leading-snug">
