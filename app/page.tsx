@@ -72,7 +72,7 @@ export default function Home() {
   {/* Texto à esquerda */}
   <div className="w-full md:w-7/12">
     <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-8 leading-tight">
-      Sofreu um acidente <br />em uma corrida de <br />aplicativo?
+      Passageiro, sofreu um acidente <br />em uma corrida de <br />aplicativo?
       Você <br />tem direito a <br />uma indenização!
     </h1>
 
